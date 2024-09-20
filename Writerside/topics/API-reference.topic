@@ -190,8 +190,7 @@
         <chapter title="Description" id="description">
             <p>{(Explain what the endpoint does.)}</p>
             <p>{(This paragraph is optional.)} This endpoint has been deprecated. Use {(the recommended endpoint)}
-                instead. For more information about how to migrate to {(the recommended endpoint)}, see <a
-                        anchor="link">{(the migration guide)}</a>.</p>
+                instead. For more information about how to migrate to {(the recommended endpoint)}, see the migration guide)}.</p>
             <p>{(This paragraph is optional.)} The maximum number of calls to this API endpoint is {(number)} per
                 minute. For more information about API rate limiting/throttling, see <a anchor="example">{(the
                     topic)}</a>.</p>
@@ -325,7 +324,6 @@
             <code-block>
                 {(Provide an example of the API response, filled with sample values.)}
             </code-block>
-            <hr/>
             <tip>
                 <p>Explore other templates from <a href="https://thegooddocsproject.dev/">The Good Docs Project</a>. Use
                     our <a href="https://thegooddocsproject.dev/feedback/?template=API%20reference">feedback form</a> to
