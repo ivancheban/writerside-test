@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       id="API-reference" title="API reference">
+
+    <title>
+        API reference
+    </title>
+    <tip>
+        <p>If you need more information about how to fill in this template, read the accompanying guide.}</p>
+    </tip>
+    <tip>
+        <p>This template includes writing instructions and boilerplate text that you can customize, use as-is, or
+            completely replace with your own text. This text is indicated in {(curly brackets)}. Make sure you replace
+            the placeholders with your own text.</p>
+    </tip>
+    <chapter title="Overview" id="overview">
+        <p>Use the {(product)} APIs to {(access | customize | program)} the {(features | functionality)}.</p>
+        <chapter title="Base URL" id="base-url">
+
+            <code-block>
+                {(Provide the base URL of the API. For example: https://api.example.com)}
+            </code-block>
+        </chapter>
+        <chapter title="Authorization New" id="authorization-new">
+            <p>Authentication and authorization {(is | is not)} required for requests to these APIs. Supported
+                authentication methods are:
+                {( Basic | Digest | OAuth | others)}</p>
+
+            <code-block>
+                {(Provide an example request with {Basic | Digest | OAuth | others)} authentication.}
+            </code-block>
+        </chapter>
+        <chapter title="Version" id="version">
+            <p>{(This section is optional.)}</p>
+            <p>{(Provide the version number using semantic versioning or your product's API versioning scheme. For
+                example: <code>0.0.1</code>)}</p>
+        </chapter>
+        <chapter title="Pagination" id="pagination">
+            <p>{(This section is optional.)}</p>
+            <p>Due to the potentially very large result sets from API calls, responses {(are | can be)} returned as
+                shorter pages.</p>
+            <p>Pagination can be customized using {(pagination settings)}. If not specified, the default values are
+                {(values)}.</p>
+        </chapter>
+        <chapter title="Rate limiting and throttling" id="rate-limiting-and-throttling">
+            <p>{(This section is optional.)}</p>
+            <p>The {(product)} APIs use a {(strategy-name)} rate limiting strategy. The maximum number of requests
+                allowed to access a {(resource | endpoint |..)} is {(number)} requests per {(time period)}.</p>
+        </chapter>
+        <chapter title="HTTP status codes" id="http-status-codes">
+            <p>The {(product)} APIs use the following standard HTTP response codes:</p>
+            <table>
+                <tr>
+                    <td>Status code</td>
+                    <td>Message</td>
+                    <td>Description</td>
+                </tr>
+                <tr>
+                    <td><code>200 OK</code></td>
+                    <td>Request succeeds.</td>
+                    <td>{(description)}</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </chapter>
+        <chapter title="Errors" id="errors">
+            <p>{(This section is optional.)}</p>
+            <p>The {(product)} APIs use the following error types:</p>
+            <table>
+                <tr>
+                    <td>Error</td>
+                    <td>Description</td>
+                </tr>
+                <tr>
+                    <td><a anchor="exampleerrortype">{(ExampleErrorType)}</a></td>
+                    <td>{(Failure in ...)}</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <chapter title="ExampleErrorType" id="exampleerrortype">
+                <table>
+                    <tr>
+                        <td>Field</td>
+                        <td>Type</td>
+                        <td>Description</td>
+                    </tr>
+                    <tr>
+                        <td>{(errorType)}</td>
+                        <td>{(enum)}</td>
+                        <td>{(Predefined error codes. Possible enum values are x, y, ..., and z.)}</td>
+                    </tr>
+                    <tr>
+                        <td>{(errorMessage)}</td>
+                        <td>{(string)}</td>
+                        <td>{(Additional information about why the error occurs.)}</td>
+                    </tr>
+                </table>
+            </chapter>
+        </chapter>
+    </chapter>
+    <chapter title="{(Resource name)}" id="resource-name">
+        <p>The {(resource name)} is used to {(functionality)}.</p>
+        <chapter title="Data model" id="data-model">
+            <table>
+                <tr>
+                    <td>Attribute</td>
+                    <td>Type</td>
+                    <td>Required?</td>
+                    <td>Description</td>
+                </tr>
+                <tr>
+                    <td>{(id)}</td>
+                    <td>string</td>
+                    <td>Required</td>
+                    <td>{(Unique identifier of user)}</td>
+                </tr>
+                <tr>
+                    <td>{(name)}</td>
+                    <td>string</td>
+                    <td>Optional</td>
+                    <td>{(Name of user)}</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </chapter>
+        <chapter title="Example" id="example">
+
+            <code-block>
+                {(Provide an example of the data representation in the format that your project use.)}
+            </code-block>
+        </chapter>
+        <chapter title="Endpoints" id="endpoints">
+            <p>Use the following endpoints to interact with the {(resource name)} entities.</p>
+            <table>
+                <tr>
+                    <td>Method</td>
+                    <td>Endpoint name</td>
+                    <td>Description</td>
+                </tr>
+                <tr>
+                    <td>POST</td>
+                    <td>{Endpoint name A}</td>
+                    <td>Creates a {(resource)}.</td>
+                </tr>
+                <tr>
+                    <td>GET</td>
+                    <td>{Endpoint name B}</td>
+                    <td>Retrieves a {(resource)}.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </chapter>
+    </chapter>
+    <chapter title="{(Endpoint name)}" id="endpoint-name">
+        <p>{(Provide a one-line description of what the API does. Starts with a verb in the indicative mood. For
+            example, &quot;Retrieves a user by <code>userID</code>&quot;.)}</p>
+        <chapter title="Endpoint" id="endpoint">
+
+            <code-block>
+                {(METHOD)} /{(request-url)}/{({path-parameter)}}
+            </code-block>
+        </chapter>
+        <chapter title="Description" id="description">
+            <p>{(Explain what the endpoint does.)}</p>
+            <p>{(This paragraph is optional.)} This endpoint has been deprecated. Use {(the recommended endpoint)}
+                instead. For more information about how to migrate to {(the recommended endpoint)}, see <a
+                        anchor="link">{(the migration guide)}</a>.</p>
+            <p>{(This paragraph is optional.)} The maximum number of calls to this API endpoint is {(number)} per
+                minute. For more information about API rate limiting/throttling, see <a anchor="example">{(the
+                    topic)}</a>.</p>
+        </chapter>
+        <chapter title="Authorization" id="authorization">
+            <p>The <a anchor="authorization">{(authorization method)}</a> is required for each API request.</p>
+            <p>{(This paragraph is optional.)} Calling this endpoint also requires the {(permission-name)}
+                permission.</p>
+        </chapter>
+        <chapter title="Request schema" id="request-schema">
+            <chapter title="Path parameters" id="path-parameters">
+                <p>{(This section is optional.)}</p>
+                <table>
+                    <tr>
+                        <td>Path parameter</td>
+                        <td>Type</td>
+                        <td>Required?</td>
+                        <td>Description</td>
+                    </tr>
+                    <tr>
+                        <td>{(id)}</td>
+                        <td>string</td>
+                        <td>Required</td>
+                        <td>{(Unique identifier of user)}</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </chapter>
+            <chapter title="Query parameters" id="query-parameters">
+                <p>{(This section is optional.)}</p>
+                <table>
+                    <tr>
+                        <td>Query parameter</td>
+                        <td>Type</td>
+                        <td>Required?</td>
+                        <td>Description</td>
+                    </tr>
+                    <tr>
+                        <td>{(pageSize)}</td>
+                        <td>int</td>
+                        <td>Optional</td>
+                        <td>{(The number of items to be returned in a single request. The default value is N.)}</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </chapter>
+            <chapter title="Header parameters" id="header-parameters">
+                <p>{(This section is optional.)}</p>
+                <table>
+                    <tr>
+                        <td>Header parameter</td>
+                        <td>Type</td>
+                        <td>Required?</td>
+                        <td>Description</td>
+                    </tr>
+                    <tr>
+                        <td>{(Content-Type)}</td>
+                        <td>string</td>
+                        <td>Required</td>
+                        <td>{(Media type of the resource. Must be an object.)}</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </chapter>
+            <chapter title="Request body" id="request-body">
+                <p>{(This section is optional.)}</p>
+                <table>
+                    <tr>
+                        <td>Field</td>
+                        <td>Type</td>
+                        <td>Required?</td>
+                        <td>Description</td>
+                    </tr>
+                    <tr>
+                        <td>{(id)}</td>
+                        <td>string</td>
+                        <td>Required</td>
+                        <td>{(Unique identifier of the user)}</td>
+                    </tr>
+                    <tr>
+                        <td>{(name)}</td>
+                        <td>string</td>
+                        <td>Optional</td>
+                        <td>{(Name of the user)}</td>
+                    </tr>
+                </table>
+            </chapter>
+        </chapter>
+        <chapter title="Request example" id="request-example">
+
+            <code-block>
+                {(Provide an example of the API request, filled with sample values.)}
+            </code-block>
+        </chapter>
+        <chapter title="Response schema" id="response-schema">
+            <table>
+                <tr>
+                    <td>Status code</td>
+                    <td>Schema</td>
+                    <td>Description</td>
+                </tr>
+                <tr>
+                    <td><code>2xx</code></td>
+                    <td><a anchor="data-model">{(ExampleDataType)}</a></td>
+                    <td>{(Describe the result where the request succeeds.)}</td>
+                </tr>
+                <tr>
+                    <td><code>4xx</code></td>
+                    <td><a anchor="exampleerrortype">{(ExampleErrorType)}</a></td>
+                    <td>{(Describe the result where the request fails with the specified error code.)}</td>
+                </tr>
+            </table>
+        </chapter>
+        <chapter title="Response example" id="response-example">
+
+            <code-block>
+                {(Provide an example of the API response, filled with sample values.)}
+            </code-block>
+            <hr/>
+            <tip>
+                <p>Explore other templates from <a href="https://thegooddocsproject.dev/">The Good Docs Project</a>. Use
+                    our <a href="https://thegooddocsproject.dev/feedback/?template=API%20reference">feedback form</a> to
+                    give feedback on this template.</p>
+            </tip>
+        </chapter>
+    </chapter>
+
+</topic>
