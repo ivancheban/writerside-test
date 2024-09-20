@@ -8,6 +8,6 @@
 
     <toc-element topic="starter.md"/>
     <toc-element topic="API-quickstart.md"/>
-    <toc-element topic="API-reference.md"/>
+    <toc-element topic="API-reference.topic"/>
     <toc-element topic="Glossary.md"/>
 </instance-profile>
